@@ -27,8 +27,9 @@ class TBMenu:
         self.parameters = parameters
         self.sep_func = lambda: print('\n')
         #process#
-        for i in range(len(keys)):
-            keys[i] = str(keys[i])
+        if keys != None:
+            for i in range(len(keys)):
+                keys[i] = str(keys[i])
 
     def display(self):
         """
